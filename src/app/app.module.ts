@@ -9,6 +9,8 @@ import { WrapperComponent } from './shared/wrapper/wrapper.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ChartsComponent } from './pages/charts/charts.component';
 import { PagesComponent } from './pages/pages/pages.component';
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import { PagesComponent } from './pages/pages/pages.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
