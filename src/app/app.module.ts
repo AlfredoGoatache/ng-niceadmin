@@ -7,9 +7,11 @@ import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { WrapperComponent } from './shared/wrapper/wrapper.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { WidgetsComponent } from './pages/widgets/widgets.component';
 import { ChartsComponent } from './pages/charts/charts.component';
 import { PagesComponent } from './pages/pages/pages.component';
 import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -18,8 +20,10 @@ import { RouterModule } from '@angular/router';
     SidebarComponent,
     WrapperComponent,
     DashboardComponent,
+    WidgetsComponent,
     ChartsComponent,
     PagesComponent,
+    
   ],
   imports: [
     BrowserModule,
