@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScriptService } from '../../services/script.service';
 
 @Component({
   selector: 'app-wrapper',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WrapperComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _script: ScriptService) { }
 
   ngOnInit(): void {
+
+    window.scroll(0,0);
+
+    this._script.loadScripts();
   }
 
 }

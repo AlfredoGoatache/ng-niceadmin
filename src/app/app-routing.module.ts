@@ -8,7 +8,6 @@ import { WrapperComponent } from './shared/wrapper/wrapper.component';
 
 const routes: Routes = [
   {path: '', component: WrapperComponent},
-  {path: 'dashboard', component: DashboardComponent},
   {path: 'widgets', component: WidgetsComponent},
   {path: 'charts', component: ChartsComponent},
   {path: 'pageblan', component: PagesComponent}
